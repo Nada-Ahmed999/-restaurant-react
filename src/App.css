@@ -1,0 +1,170 @@
+/* App.css */
+.contentAll{
+  background-color: #35220e;
+  position: relative;
+  z-index: -2;
+  margin-bottom: -17px;
+}
+
+.app {
+  position: relative;
+  overflow: hidden;
+  height: 41rem;
+  margin: auto;
+}
+
+.bg-video {
+  position: absolute;
+  top: -6%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit:fill;
+  z-index: -1; 
+} 
+
+.content {
+  position: relative;
+  z-index: 1; 
+  text-align: center;
+  color: #ffe5bd;
+  top: 40%;
+  width: 50%;
+}
+
+
+.libertinus-keyboard-regular {
+  font-family: "Libertinus Keyboard", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.lobster-two-bold {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.link,
+.btnMenu{
+  text-decoration: none;
+  color: #ffe5bd;
+  font-weight: bold;
+  /* padding: 7px; */
+  height: 40px;
+}
+
+.btnMenu{
+background-color: transparent;
+border: none;
+} 
+
+.active{
+  background-color:chocolate;
+  color:whitesmoke;
+  border: 1px solid rgb(64, 50, 25);
+  border-radius: 6%;
+  -webkit-border-radius: 6%;
+  -moz-border-radius: 6%;
+  -ms-border-radius: 6%;
+  -o-border-radius: 6%;
+}
+
+
+
+.text-orange
+{
+  color: chocolate;
+}
+
+.bg-orange{
+  background-color: chocolate;
+}
+.bg-menu,
+.bg-caffe{
+background-color: #35220e;
+}
+
+.bg-container{
+  background-color: #ffe5bd;
+}
+.text-color{
+  color:#ffe5bd
+}
+
+.bg-offer{
+  background-color: #ff2b2b14;
+}
+
+.bg-nav{
+  background-color: #35220eb3;
+}
+
+.pt-10{
+  padding-top: 10% ;
+}
+
+.border-img{
+  border: 10px solid #35220e
+}
+
+.h-35{
+  height: 40em;
+}
+
+.head{
+  top: 24px;
+    background-color: rgb(143, 102, 68);
+    left: 100px;    
+}
+
+input::placeholder,
+textarea::placeholder{
+  /* color: rgba(255, 255, 255, 0.721); */
+  color: #ffe5bd78 ;
+  padding-left: 5px;
+
+}
+
+input:focus,
+textarea:focus{
+  outline: none;
+  box-shadow: 1px 3px 8px #c07436;
+}
+
+.w-60{
+  width: 60%;
+}
+
+
+.dancing-script-uniquifier {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.form-check-input{
+  background-color: burlywood  !important; 
+}
+
+.form-check-input:checked[type=checkbox]{
+  background-color: chocolate !important;
+}
+
+
+.btn-hover:hover{
+ color: #35220e !important;
+  background-color: #ffe5bd;
+}
+
+.btn-add:hover{
+  background-color: #c07436 !important;
+  color: white;
+
+}
+
+.hidden-check{
+  visibility: hidden;
+}
