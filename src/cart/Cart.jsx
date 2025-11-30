@@ -87,7 +87,9 @@ export default function Cart() {
      </div>
 
        <h1 className='dancing-script-uniquifier text-orange fw-bold '>Bloom House
-       <span><img src="../../public/img1.png" alt="" width={70} /></span>
+       {/* <span><img src="../../public/img1.png" alt="" width={70} /></span> */}
+        <span><img src="https://img.freepik.com/premium-vector/restaurant-logo-design-vector-illustration-food-symbol-vector_1236506-726.jpg" alt="" width={70} className='rounded-circle'/></span>
+
        </h1>
 
      </div>
