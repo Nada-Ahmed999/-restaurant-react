@@ -37,7 +37,8 @@ export default function Navbar() {
 <div className='position-absolute d-flex w-100 mb-5 ' style={{zIndex:"100"}} >
  <nav className='  bg-nav w-100 d-flex justify-content-between  '>
   <div className='d-flex px-lg-5'>
-    <img src="../../public/img1.png " alt="" width={60} />
+    {/* <img src="../../public/img1.png " alt="" width={60} /> */}
+   <img src="https://img.freepik.com/premium-vector/restaurant-logo-design-vector-illustration-food-symbol-vector_1236506-726.jpg" alt="" width={60} className='rounded-circle'/>
     <p className='text-orange pt-3  fw-bold dancing-script-uniquifier fs-4 '>Bloom House</p>
   </div>
 
