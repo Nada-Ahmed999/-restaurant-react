@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars,faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import Cart from '../cart/Cart.jsx'
 import { mycontext } from '../Context/Context.jsx'
-import UseCountProduct from '../Custom/UseCountproduct.jsx'
+import UseCountProduct from '../custom/UseCountProduct.jsx'
 import { faBraveReverse } from '@fortawesome/free-brands-svg-icons'
 
 
