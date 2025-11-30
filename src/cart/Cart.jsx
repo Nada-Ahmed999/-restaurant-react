@@ -66,7 +66,7 @@ export default function Cart() {
    </div>}
  
      <div className=' shadow  p-2 w-100 mt-5  m-auto rounded-5 my-2 px-5 d-flex justify-content-between align-items-center '>
-      <div className={`${size<727?'w-75':"w-25"} p-4 rounded-3 px-1 ${totalAll == 0?'hidden-check':""}`} style={{backgroundColor:'#ffffffb5'}}>
+      <div className={`${size<727?'w-75 me-2':"w-25"} p-4 rounded-3 px-1 ${totalAll == 0?'hidden-check':""}`} style={{backgroundColor:'#ffffffb5'}}>
 
      <div className='d-flex justify-content-between shadow p-2 rounded-3 '>
       <h5 className='text-orange fw-bold'>SupTotal:</h5>
@@ -86,7 +86,7 @@ export default function Cart() {
         <button className='mt-5 bg-caffe fw-bold p-2 w-100 text-light border-light rounded-3 shadow border-1 btn-add' onClick={()=>setOpen(true)}>CheckOut</button>
      </div>
 
-       <h1 className='dancing-script-uniquifier text-orange fw-bold '>Bloom House
+        <h1 className={`dancing-script-uniquifier text-orange fw-bold ${size<992?'d-flex':''}`}>Bloom House
        {/* <span><img src="../../public/img1.png" alt="" width={70} /></span> */}
         <span><img src="https://img.freepik.com/premium-vector/restaurant-logo-design-vector-illustration-food-symbol-vector_1236506-726.jpg" alt="" width={70} className='rounded-circle'/></span>
 
