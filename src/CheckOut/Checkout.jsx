@@ -60,7 +60,7 @@ setTimeout(() => {
   
   {/* welcome */}
 
-  <div className= {`p-5  w-100 text-center  rounded-3 position-absolute bottom-50 z-2 start-0 ${welcome?"":'d-none'}`} style={{backgroundColor:'#35220e87'}}>
+    <div className= {` ${size<992?'bottom-0':'bottom-50'} p-5 w-100 text-center  rounded-3 position-absolute  z-2 start-0 ${welcome?"":'d-none'}`} style={{backgroundColor:'#35220e87'}}>
     <h2 className='fw-bold text-light py-4'>THaNK YoU <span className='text-capitalize fs-1 fw-bold text-success dancing-script-uniquifier'>{name}</span> FoR ChOoSING <span className='fs-1 fw-bold text-success dancing-script-uniquifier'>BLOoM HoUSe</span> ENJoY YoUR OrDER.</h2>
     <h5 className='text-orange fs-3 py-3'>The order will arrive within an hour 
       <FontAwesomeIcon icon={faAlarmClock} shake className='text-success'></FontAwesomeIcon>
