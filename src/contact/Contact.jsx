@@ -8,7 +8,8 @@ export default function Contact() {
   return <>
   <div className='  pt-5 bg-caffe position-relative z-0' >
    <div className='position-absolute bg-dark w-100 h-100 z-1 opacity-50'></div>
-    <img src="../../public/conact1.jpg" alt="" className=' position-absolute w-100 h-100 pt-3 '  style={{zIndex:'0'}} />
+    {/* <img src="../../public/conact1.jpg" alt="" className=' position-absolute w-100 h-100 pt-3 '  style={{zIndex:'0'}} /> */}
+    <img src="https://img.freepik.com/free-photo/close-up-hands-holding-device_23-2149250090.jpg?semt=ais_hybrid&w=740&q=80" alt="" className=' position-absolute w-100 h-100 pt-3 '  style={{zIndex:'0'}} />
     <div className='h-35 w-100 position-relative mt-0  z-3 d-flex align-items-center' >
 
       <div className={`${size < 992 ?'w-100':'w-25'} border border-2 border-light rounded-5 d-flex align-items-center  flex-column  pt-2 m-5`} style={{backgroundColor:'#8f6644'}}>
@@ -24,7 +25,7 @@ export default function Contact() {
     </div>
    <div className={`${size < 992?'d-none':''} position-absolute top-50 z-3  d-flex align-items-center`} style={{left:'40%'}}>
     <h1 className='dancing-script-uniquifier fw-bold text-color  me-4  ' style={{fontSize:"82px" }}>Bloom House </h1>
- <span> <img src="../../public/hotmail.png" alt="mail"  width={50}/></span>
+ <span> <img src="https://cdn-icons-png.flaticon.com/512/12545/12545270.png" alt="mail"  width={130}/></span>
  </div>
 
 
