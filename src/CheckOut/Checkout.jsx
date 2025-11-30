@@ -23,7 +23,7 @@ setTimeout(() => {
     {/* background */}
     <div className=' bg-dark position-absolute z-0 w-100 h-100 top-0 start-0 bg-opacity-75' >
       <div className="app z-3 w-100 h-100">
-      <video
+      {/* <video
         autoPlay
         loop
         muted
@@ -31,7 +31,8 @@ setTimeout(() => {
         className="bg-video"
       >
         <source src="../../public/video/back.mp4" type="video/mp4" className='position-absolute' />
-      </video>
+      </video> */}
+       <img src="https://t4.ftcdn.net/jpg/00/93/46/99/360_F_93469979_yOX5piV5SFE7mYp6wwg6MnHy27OvFBq3.jpg" alt="" className='position-absolute bg-video' />
   </div>
     </div>
 
@@ -39,7 +40,8 @@ setTimeout(() => {
 
   <div className='position-absolute bottom-0 w-100 start-0  mb-5 '>
   <div className={`${size<727?'w-100':'w-75'} bg-caffe text-center rounded-5 py-5 position-relative z-1  pe-5 m-auto  ${close?'':'d-none'} `}>
-    <img src="../../public/del4.jfif" alt="" className=' rounded-5 z-2 start-0 top-0 w-100 h-100 opacity-50 position-absolute' />
+    {/* <img src="../../public/del4.jfif" alt="" className=' rounded-5 z-2 start-0 top-0 w-100 h-100 opacity-50 position-absolute' /> */}
+    <img src="https://thumbs.dreamstime.com/z/delivery-man-courier-green-uniform-riding-motorcycle-service-deliver-food-beverages-ready-meal-home-online-order-229729941.jpg" alt="" className=' rounded-5 z-2 start-0 top-0 w-100 h-100 opacity-50 position-absolute' />
    <form action="" className={`${size<727?'w-75':'w-50'} bg-dark bg-opacity-75 position-relative z-3 d-flex flex-column ms-auto border border-1 border-success py-3 px-2 rounded-5`}>
     <h4 className='fw-bold text-success '> Please register <br></br> your name, address and phone number.</h4>
     <input onChange={(e)=>setName(e.target.value)}  type="text"  placeholder='Your-Name' className='mx-4 text-light fs-5 bg-success bg-opacity-25 p-2 border border-2 border-success my-2 rounded-5'/>
