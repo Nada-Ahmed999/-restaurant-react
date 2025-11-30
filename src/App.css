@@ -10,8 +10,12 @@
   position: relative;
   overflow: hidden;
   /* height: 41rem; */
-  height: 33em;
+  height: 50em;
   margin: auto;
+}
+
+.h-app{
+  height: 33em;
 }
 
 .bg-video {
