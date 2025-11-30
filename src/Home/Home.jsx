@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
+
 
 
 export default function Home() {
- 
+ let [size,setSize]=useState(window.innerWidth)
+
 
   return <>
 
    <div className='contentAll '>
-<div className="app">
+<div className={`${size < 992?'h-app':'app'}`}>
       {/* <video
         autoPlay
         loop
