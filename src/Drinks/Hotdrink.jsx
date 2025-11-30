@@ -12,6 +12,7 @@ export default function Hotdrink() {
   let x=0;
 
   let local=localStorage.length !== 0 ?Object.keys(localStorage):null;
+  let[size,setSize]=useState(window.innerWidth)
 
 
   
@@ -19,19 +20,20 @@ export default function Hotdrink() {
 <div className="bg-caffe pt-5">
 
 <div className="container bg-container rounded-4 mt-5 pt-3">
-     <div className=" d-flex  justify-content-around mx-3 pt-5 px-3 align-items-center bg-offer mt-5 py-4  d-flex justify-content-between rounded-3 shadow">
+     <div className=" d-flex  justify-content-around mx-3 pt-5 px-3 align-items-center bg-offer mt-5 py-4  d-flex justify-content-between rounded-3 shadow position-relative">
 
-   <video
+   {/* <video
         autoPlay
         loop
         muted
         playsInline
-        width={400}
+        width={size < 727?200:400}
         className="rounded-circle"
         
       >
         <source src="../../public/video/hotdrink.mp4" type="video/mp4" className='position-absolute' />
-      </video>
+      </video> */}
+      <img src="https://yorkemporium.co.uk/cdn/shop/articles/AdobeStock_315403482_1_b207df01-70f2-407f-ab1f-64f8b66bb010.jpg?v=1756975415&width=5760" alt=""  className=' rounded-circle '  width={200}/>
  <h1 className="text-orange mb-0 pt-5 w-50 ">Enjoy Your Coffee With Bloom House <FontAwesomeIcon icon={faMugHot}></FontAwesomeIcon></h1>
 </div>
 {/* menu hot drink  */}

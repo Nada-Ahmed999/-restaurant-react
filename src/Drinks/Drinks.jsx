@@ -10,6 +10,8 @@ import { mycontext } from '../Context/Context.jsx';
 import { useNavigate } from 'react-router-dom';
 
 export default function Drinks() {
+
+  let[size,setSize]=useState(window.innerWidth)
   let nav=useNavigate()
 
   var settings = {
@@ -40,13 +42,13 @@ export default function Drinks() {
 {coffee && drink?
 
 
-   <div className='d-flex w-75 m-auto p-5 '>
+   <div className={`d-flex m-auto p-5 ${size < 700?'w-100 flex-column':'w-75'}`}>
 
  
 
    {/* card1 */}
-  <div className="w-50  col ">
-  <div className="col me-5">
+  <div className={ `${size < 700?'w-100':'w-50'} col  `}>
+  <div className="col me-5 ">
     <div className="card h-100">
       <Slider {...settings}>
         {coffee?coffee.drinks.map((item,index)=>{ 
@@ -58,9 +60,9 @@ export default function Drinks() {
     
   
       </Slider>
-      <div className="card-body">
+      <div className="card-body ">
         <button className='bg-caffe text-light fw-bold p-1 rounded-1 btn-add' onClick={()=>nav("/hotdrink")} >Coffee</button>
-        <p className="card-text fw-bold ">
+        <p className="card-text fw-bold  ">
           "Enjoy the most beautiful moments of warmth with our diverse selection of coffees that contribute to the flavors."
           </p>
       </div>
@@ -69,9 +71,9 @@ export default function Drinks() {
 </div>
 
 {/* card2 */}
-  <div className="w-50 col ">
-  <div className="col">
-    <div className="card h-100">
+  <div className={ `${size < 700?'w-100 pe-5':'w-50'} col `}>
+  <div className="col ">
+    <div className="card h-100 ">
       <Slider {...settings}>
         {drink?drink.map((item,index)=>{ 
         return <div key={index}>

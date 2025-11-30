@@ -1,18 +1,23 @@
 import { faFacebook, faInstagram, faTiktok, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faMotorcycle, faPhoneVolume } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import React, { useState } from 'react'
 
 
 
 export default function Footer() {
 
+  let [size,setSize]=useState(window.innerWidth)
+
+  
+  
+  
 
   return<>
-  <div className='d-flex justify-content-between px-5 position-absolute bg-menu w-100 '  style={{zIndex:"100"}}>
+  <div className='m-sm-auto pb-3 pt-4 d-md-flex justify-content-between px-5 position-absolute bg-menu w-100  '  style={{zIndex:"100"}}>
 
   <div>
-  <FontAwesomeIcon icon={faFacebook}  className='fs-5 mt-0 ms-3  text-color'  />
+  <FontAwesomeIcon icon={faFacebook}  className={`fs-5 mt-0 ms-3 text-color`}  />
   <FontAwesomeIcon icon={faInstagram} className=' fs-5 mt-0 ms-2 text-color ' />
   <FontAwesomeIcon icon={faTiktok} className='fs-5 mt-0  ms-2  text-color'  />
   <FontAwesomeIcon icon={faYoutube} className='fs-5 mt-0  ms-2 text-color' />

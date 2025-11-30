@@ -17,9 +17,8 @@ export default function Food() {
   <div className='bg-caffe pt-5 '>
     <div className='container bg-container pt-3 mt-5  rounded-4'>
        
-       {/* <div className=" d-flex justify-content-around pt-4 "> */}
        <div className=" d-flex justify-content-around mx-3 pt-4 px-3 align-items-center bg-offer mt-5 py-4  d-flex justify-content-between rounded-3 shadow">
-   <video
+   {/* <video
         autoPlay
         loop
         muted
@@ -30,7 +29,8 @@ export default function Food() {
         
       >
         <source src="../../public/video/brgr.mp4" type="video/mp4" className='' />
-      </video>
+      </video> */}
+      <img src="https://png.pngtree.com/thumb_back/fh260/background/20251019/pngtree-mouthwatering-gourmet-burger-with-fresh-toppings-on-sesame-bun-tempting-fast-image_19925436.webp" alt="" className='rounded-circle' width={200} />
  <h1 className="text-orange mb-0 pt-5 w-50 ">Enjoy Your Food With Bloom House <FontAwesomeIcon icon={faBurger}></FontAwesomeIcon></h1>
 </div>
 

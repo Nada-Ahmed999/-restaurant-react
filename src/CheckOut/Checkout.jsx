@@ -9,8 +9,7 @@ export default function Checkout() {
   let[name,setName]=useState(null)
   let [close,setClose]=useState(true)
   let [welcome,setWelcome]=useState(false)
-
-
+let[size,setSize]=useState(window.innerWidth)
 
 setTimeout(() => {
   if(!close){
@@ -39,9 +38,9 @@ setTimeout(() => {
     {/* regster */}
 
   <div className='position-absolute bottom-0 w-100 start-0  mb-5 '>
-  <div className={`bg-caffe text-center rounded-5 py-5 position-relative z-1  pe-5  w-75 m-auto  ${close?'':'d-none'} `}>
+  <div className={`${size<727?'w-100':'w-75'} bg-caffe text-center rounded-5 py-5 position-relative z-1  pe-5 m-auto  ${close?'':'d-none'} `}>
     <img src="../../public/del4.jfif" alt="" className=' rounded-5 z-2 start-0 top-0 w-100 h-100 opacity-50 position-absolute' />
-   <form action="" className='bg-dark bg-opacity-75 position-relative z-3 d-flex flex-column w-50 ms-auto border border-1 border-success py-3 px-2 rounded-5'>
+   <form action="" className={`${size<727?'w-75':'w-50'} bg-dark bg-opacity-75 position-relative z-3 d-flex flex-column ms-auto border border-1 border-success py-3 px-2 rounded-5`}>
     <h4 className='fw-bold text-success '> Please register <br></br> your name, address and phone number.</h4>
     <input onChange={(e)=>setName(e.target.value)}  type="text"  placeholder='Your-Name' className='mx-4 text-light fs-5 bg-success bg-opacity-25 p-2 border border-2 border-success my-2 rounded-5'/>
     <input type="text" placeholder='Your-Phone-Number' className='text-light fs-5 mx-4 bg-success bg-opacity-25 p-2 border border-2 border-success rounded-5 my-2'/>

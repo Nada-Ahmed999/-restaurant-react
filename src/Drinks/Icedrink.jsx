@@ -22,7 +22,7 @@ export default function Hotdrink() {
 <div className="container bg-container mt-5 rounded-4 pt-3">
        <div className=" d-flex justify-content-around mx-3 pt-4 px-3 align-items-center bg-offer mt-5 py-4  d-flex justify-content-between rounded-3 shadow">
 
-   <video
+   {/* <video
         autoPlay
         loop
         muted
@@ -33,7 +33,8 @@ export default function Hotdrink() {
         
       >
         <source src="../../public/video/drink.mp4" type="video/mp4" className='position-absolute' />
-      </video>
+      </video> */}
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/042/712/038/small/milk-cream-is-poured-into-a-iced-coffee-with-ice-cubes-on-a-dark-table-with-coffee-beans-slow-motion-animation-high-quality-4k-footage-video.jpg" alt="" className="rounded-circle" width={200} height={200}/>
  <h1 className="text-orange mb-0 pt-5 w-50 ">Enjoy Your juice With Bloom House <FontAwesomeIcon icon={faChampagneGlasses}></FontAwesomeIcon></h1>
 </div>
 {/* menu ice drink  */}

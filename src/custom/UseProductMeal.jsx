@@ -8,6 +8,7 @@ import UseCountItem from './UseCountItem.jsx';
 export default function UseProductMeal() {
 
    let{add,delet,deleteItem,food}=useContext(mycontext);
+    let[size,setSize]=useState(window.innerWidth)
     
    let items=localStorage.length !== 0?JSON.parse(localStorage.ids):null
 
@@ -26,11 +27,11 @@ export default function UseProductMeal() {
          if(foodItem.id === id){    
           
              return <div className='pt-1' key={index}>
-          <div className='shadow border-2 border-warning border  w-50 m-auto rounded-5 py-4 position-relative d-flex justify-content-between' style={{backgroundColor:'#f2eeeac2'}}>
+     <div className={`${size < 727 ?'mb-5 w-100':'w-50'} mt-3 shadow border-3 border-warning border  m-auto rounded-5 py-4 position-relative d-flex justify-content-between`} style={{backgroundColor:'#f2eeeac2'}}>
             <div className='border-2 border-warning border-end w-60'>
-               <img src={foodItem.image} alt="" width={120} height={120} className='position-absolute top-0 bg-light rounded-circle end-100 me-5 '   /> 
+               <img src={foodItem.image} alt="" width={120} height={120} className={` ${size<727?"mt-3 end-50 top-50":"end-100"} position-absolute top-0 bg-light rounded-circle  me-5 `}   /> 
                  <h2 className='mx-4 text-orange px-5'>{foodItem.title}</h2>
-                 <span className='text-success fw-bold ms-4 fs-5 px-5'>EGP {(food.price)*(localStorage[foodItem.title])}</span>
+                 <span className='text-success fw-bold ms-4 fs-5 px-5'>EGP{(food.price)*(localStorage[foodItem.title])}</span>
             </div>
   
             <div className='pt-4 border-2 border-end border-warning pe-4'>

@@ -9,7 +9,8 @@
 .app {
   position: relative;
   overflow: hidden;
-  height: 41rem;
+  /* height: 41rem; */
+  height: 50em;
   margin: auto;
 }
 
@@ -167,4 +168,39 @@ textarea:focus{
 
 .hidden-check{
   visibility: hidden;
+}
+
+@media (max-width:992px){
+  .menu-sm{
+    background-color: #302519d1;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    text-align: center;
+  }
+  .nestedMenu-sm{
+   top: 70px;
+    padding: 50px;
+  }
+  .buttonMene-sm{
+   padding-top: 5px;
+   padding-left: 14px;
+   padding-right: 14px;
+   margin-left: 5px;
+   margin-right: 5px;
+   font-size: 12px;
+  }
+
+  .circleMenu{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    /* padding-left: 16px; */
+    /* padding-top: 10px; */
+    margin: auto;
+    background-color: #000000;
+  }
 }

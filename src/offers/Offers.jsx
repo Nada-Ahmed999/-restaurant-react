@@ -17,7 +17,9 @@ export default function Offers() {
   let[numberof,setNumberof]=useState(null)
   let [list,setList]=useState(null)
   let x=0;
- 
+ let [size,setSize]=useState(window.innerWidth)
+
+
 
 
   
@@ -25,31 +27,32 @@ export default function Offers() {
   
   
   return <>
-  <img src="../../public/50-removebg-preview.png" alt=""  className='z-2 position-absolute end-0 mt-5  pe-3 me-5 pt-2' width={220} />
+  <img src="../../public/offer50.png" alt=""  className={`z-2 position-absolute end-0 mt-5  pe-3 me-5 pt-2 ${size<727?'w-25':''}`} width={220} />
   <div className='bg-caffe pt-4 position-relative'>
     <div className='container p-5  '>
 
       <div className='px-3 align-items-center bg-offer mt-5 py-4  border border-1 border-light d-flex justify-content-between rounded-3 mb-5 '>
        
-       <div className='parent d-flex align-items-center'>
+       <div className='parent d-md-flex align-items-center'>
 <div >
        {food?
-        <img src={food[9].strMealThumb} alt="offer" width={250} className='border-img rounded-circle'/> 
+        <img src={food[9].strMealThumb} alt="offer" width={250} className={`border-img rounded-circle ${size < 727?'w-50':''}`}/> 
         :
         ""
       }
  
        <span className='text-color fw-bold fs-1 px-2'>+</span>
+       {/* height={250} */}
 
        {coffee?
-      <img src={coffee.drinks[6].strDrinkThumb} alt=""  width={250} height={250} className='border-img rounded-circle'/> 
+      <img src={coffee.drinks[6].strDrinkThumb} alt=""  width={250}  className={`border-img rounded-circle ${size < 727?'w-50':''}`}/> 
       :""
     }
        <span className='text-color fw-bold fs-1 px-3'>=</span>
        </div>
 
        <div className=' text pb-3 px-3'>
-               <h3 className='text-color fw-bold  text-uppercase fs-2'>enjoy buy <span className='fs-1 text-orange'>2</span> get <span className='fs-1 text-orange'>1</span> free drink 
+               <h3 className={`text-color fw-bold  text-uppercase ${size < 992?'fs-6':'fs-2'}`}>enjoy buy <span className='fs-1 text-orange'>2</span> get <span className='fs-1 text-orange'>1</span> free drink 
                <FontAwesomeIcon icon={faFaceSmileWink} className='text-warning px-2'></FontAwesomeIcon>
                </h3>
 
@@ -65,9 +68,9 @@ export default function Offers() {
       {/* card-offer */}
       {food?
      
-   <div className=' d-flex mt-5 pt-10 '>
+   <div className={`d-flex  mt-5 pt-10 ${size < 992?'flex-column':''}`}>
     {/* ofer1 */}
-    <div className=' w-25 bg-light text-center  my-5  p-5 mx-auto  position-relative d-flex align-items-end rounded-5 h-75'>
+    <div className={` ${size >727?'w-25':''} bg-light text-center  my-5  p-5 mx-auto  position-relative d-flex align-items-end rounded-5 h-75`}>
 
  <img src={food[2].strMealThumb} alt="No Offer" width={250} className='border-img rounded-circle position-absolute bottom-50 start-0 ms-4 mb-5' />
 
@@ -98,7 +101,7 @@ export default function Offers() {
     </div>
 
     {/* offer2 */}
-    <div className=' w-25 bg-light text-center  my-5  p-5 mx-auto  position-relative d-flex align-items-end rounded-5 h-75'>
+    <div className=' bg-light text-center  my-5  p-5 mx-auto  position-relative d-flex align-items-end rounded-5 h-75'>
       <div >
       <img src={food[18].strMealThumb} alt="No Offer" width={250} className='border-img rounded-circle position-absolute bottom-50 start-0 ms-4 mb-5' />
       </div>
@@ -128,7 +131,7 @@ export default function Offers() {
     </div>
 
     {/* offer3 */}
-    <div className=' w-25 bg-light text-center  my-5  p-5 mx-auto  position-relative d-flex align-items-end rounded-5 h-75'>
+    <div className=' bg-light text-center  my-5  p-5 mx-auto  position-relative d-flex align-items-end rounded-5 h-75'>
       <div>
       <img src={food[15].strMealThumb} alt="No Offer" width={250} className='border-img rounded-circle position-absolute bottom-50 start-0 ms-4 mb-5'/>
       </div>

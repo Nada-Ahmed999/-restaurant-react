@@ -16,6 +16,7 @@ export default function Cart() {
   let [total,setTotal]=useState(localStorage.total !== undefined ?localStorage.total:null)
   let [totalAll,setTotalAll]=useState(0);
   let [open,setOpen]=useState(false)
+  let[size,setSize]=useState(window.innerWidth)
   
   setInterval(()=>{
     if(test !== localStorage.ids){
@@ -26,7 +27,6 @@ export default function Cart() {
     }
   },0)
 
-// console.log(coffee);
 
   
   
@@ -57,7 +57,7 @@ export default function Cart() {
   <UseProductOffer/>
   
 
-   {test?"":<div className='bg-caffe w-60 text-orange rounded-2 m-auto p-5 '> 
+   {test?"":<div className={`${size < 787?'w-100':'w-60'} bg-caffe  text-orange rounded-2 m-auto p-5 `}> 
    <h1>Come on go choose the best drinks and food
      <span>
        <FontAwesomeIcon icon={faHandHoldingHeart} beatFade></FontAwesomeIcon>
@@ -66,7 +66,7 @@ export default function Cart() {
    </div>}
  
      <div className=' shadow  p-2 w-100 mt-5  m-auto rounded-5 my-2 px-5 d-flex justify-content-between align-items-center '>
-      <div className={`p-4 rounded-3 w-25 px-1 ${totalAll == 0?'hidden-check':""}`} style={{backgroundColor:'#ffffffb5'}}>
+      <div className={`${size<727?'w-75':"w-25"} p-4 rounded-3 px-1 ${totalAll == 0?'hidden-check':""}`} style={{backgroundColor:'#ffffffb5'}}>
 
      <div className='d-flex justify-content-between shadow p-2 rounded-3 '>
       <h5 className='text-orange fw-bold'>SupTotal:</h5>
