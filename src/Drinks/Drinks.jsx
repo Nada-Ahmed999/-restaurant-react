@@ -36,7 +36,7 @@ export default function Drinks() {
   return <>
 
   <div className='bg-caffe pt-5'>
-    <div className='container  mt-5 rounded-4 bg-container position-relative' >
+    <div className='container  mt-5 rounded-4 bg-container position-relative pb-5' >
 
 
 {coffee && drink?
