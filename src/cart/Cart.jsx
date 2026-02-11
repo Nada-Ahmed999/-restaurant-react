@@ -48,7 +48,7 @@ export default function Cart() {
   
    
   return <>
-   <div className='bg-caffe  py-5 h-35 overflow-y-scroll'>
+   <div className='bg-caffe  py-5 h-100 overflow-y-scroll'>
      <div className='container bg-container  my-5 rounded-5 pt-4'>
   {/* item */}
   <UseProduct/>
