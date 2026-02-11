@@ -9,7 +9,9 @@ import Footer from '../footer/Footer.jsx'
 export default function Layout() {
   return <>
   <Navbar/>
+    <div className="h-100">
    <Outlet></Outlet>
+    </div>
    <Footer/>
   </>
 }
